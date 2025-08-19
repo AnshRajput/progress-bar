@@ -1,39 +1,91 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# 🎯 progress_bar_rounded
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+A **customizable rounded progress bar widget** for Flutter.  
+Easily add beautiful animated progress bars with rounded edges, colors, and child widgets inside.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+---
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## 🚀 Features
 
-## Features
+- 🎨 Fully customizable colors and styles  
+- ⏱️ Smooth **animated progress** with custom duration  
+- 🔄 Supports **reverse progress direction**  
+- 🧩 Add child widgets inside: left, right, and center  
+- 📐 Customizable height, margin, padding, and border radius  
+- ⚡ Lightweight and easy to use  
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+---
 
-## Getting started
+## 📦 Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this to your `pubspec.yaml`:
 
-## Usage
+```yaml
+dependencies:
+  progress_bar_rounded: ^1.0.0
+Then run:
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
 
-```dart
-const like = 'sample';
-```
+flutter pub get
+🔧 Usage Example
 
-## Additional information
+import 'package:flutter/material.dart';
+import 'package:progress_bar_rounded/progress_bar_rounded.dart';
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+class ExamplePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.grey[200],
+      body: Center(
+        child: RoundedProgressBar(
+          percent: 65, // progress %
+          height: 40,
+          color: Colors.green, // progress color
+          backgroundColor: Colors.grey[300]!, // background color
+          borderRadius: BorderRadius.circular(20),
+          milliseconds: 600,
+          childCenter: Text(
+            "65%",
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+          childLeft: Icon(Icons.check, color: Colors.white),
+          childRight: Icon(Icons.flag, color: Colors.white),
+        ),
+      ),
+    );
+  }
+}
+🎨 Customization Options
+Property	Type	Default	Description
+percent	double	40	Progress percentage (0–100).
+height	double	50	Height of the progress bar.
+color	Color	Required	Color of the progress indicator.
+backgroundColor	Color	Required	Background color of the bar.
+margin	EdgeInsetsGeometry?	null	Outer margin of the widget.
+paddingChildLeft	EdgeInsetsGeometry?	16	Padding for left child.
+paddingChildRight	EdgeInsetsGeometry?	16	Padding for right child.
+childCenter	Widget?	null	Widget shown at the center.
+childLeft	Widget?	null	Widget shown on the left side.
+childRight	Widget?	null	Widget shown on the right side.
+reverse	bool	false	Reverse direction of progress.
+milliseconds	int	500	Animation duration.
+borderRadius	BorderRadius?	12	Rounded corner radius.
+
+💡 Example with Reverse Progress
+RoundedProgressBar(
+  percent: 75,
+  height: 30,
+  color: Colors.red,
+  backgroundColor: Colors.black12,
+  reverse: true, // progress fills from right to left
+  childCenter: Text("Reverse 75%", style: TextStyle(color: Colors.white)),
+)
+🛠️ Contribution
+Contributions are welcome! 🎉
+If you’d like to add features or fix bugs, feel free to open a PR.
+
+📜 License
+MIT License © 2025 Ansh Gandharva
+
+✨ Made with Flutter ❤️
