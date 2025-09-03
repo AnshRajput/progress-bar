@@ -344,13 +344,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "progress_bar",
+      "name": "progress_bar_rounded",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2025-09-03T05:43:32.123928Z",
+  "generated": "2025-09-03T05:47:36.320364Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///Users/ansh/Development/flutter",

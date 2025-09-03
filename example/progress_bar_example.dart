@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:progress_bar/progress_bar.dart';
+import 'package:progress_bar_rounded/progress_bar.dart';
 
 void main() => runApp(MyApp());
 

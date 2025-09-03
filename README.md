@@ -1,8 +1,8 @@
-# 🎯 progress_bar
+# 🎯 progress_bar_rounded
 
 A **customizable rounded progress bar widget** for Flutter with smooth animations, multiple themes, and flexible child widget support.
 
-[![pub package](https://img.shields.io/pub/v/progress_bar.svg)](https://pub.dev/packages/progress_bar)
+[![pub package](https://img.shields.io/pub/v/progress_bar_rounded.svg)](https://pub.dev/packages/progress_bar_rounded)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Flutter](https://img.shields.io/badge/Flutter-3.0+-blue.svg)](https://flutter.dev)
 
@@ -27,7 +27,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  progress_bar: ^1.0.1
+  progress_bar_rounded: ^1.0.1
 ```
 
 Then run:
@@ -42,7 +42,7 @@ flutter pub get
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:progress_bar/progress_bar.dart';
+import 'package:progress_bar_rounded/progress_bar.dart';
 
 class MyWidget extends StatelessWidget {
   @override
@@ -309,8 +309,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📧 **Issues**: [GitHub Issues](https://github.com/yourusername/progress_bar/issues)
-- 📖 **Documentation**: [API Reference](https://pub.dev/documentation/progress_bar)
+- 📧 **Issues**: [GitHub Issues](https://github.com/AnshRajput/progress-bar/issues)
+- 📖 **Documentation**: [API Reference](https://pub.dev/documentation/progress_bar_rounded)
 - 🐦 **Twitter**: [@yourusername](https://twitter.com/yourusername)
 
 ---

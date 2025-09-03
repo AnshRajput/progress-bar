@@ -1,7 +1,9 @@
-name: progress_bar
+name: progress_bar_rounded
 description: A customizable rounded progress bar widget for Flutter with smooth animations, multiple themes, and flexible child widget support.
 version: 1.0.1
 homepage: https://github.com/AnshRajput/progress-bar
+repository: https://github.com/AnshRajput/progress-bar
+issue_tracker: https://github.com/AnshRajput/progress-bar/issues
 
 environment:
   sdk: ">=2.18.0 <4.0.0"
