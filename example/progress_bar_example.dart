@@ -5,10 +5,10 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  MyAppState createState() => MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
   double percent = 10;
 
   @override
@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Rounded Progrss Bar'),
+          title: Text('Rounded Progress Bar'),
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.add),
@@ -64,5 +64,3 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
-
-class RoundedProgressBarStyle {}
