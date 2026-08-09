@@ -1,3 +1,5 @@
+
+
 # 🎯 progress_bar_rounded
 
 A **customizable rounded progress bar widget** for Flutter with smooth animations, multiple themes, and flexible child widget support.
@@ -42,7 +44,7 @@ flutter pub get
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:progress_bar_rounded/progress_bar.dart';
+import 'package:progress_bar_rounded/progress_bar_rounded.dart';
 
 class MyWidget extends StatelessWidget {
   @override
